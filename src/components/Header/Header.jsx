@@ -1,0 +1,13 @@
+import React from "react";
+import classes from "./Header.module.css";
+console.log(classes);
+
+const Header = () => {
+  return (
+    <header className={classes.header}>
+      <img src="https://static.rfstat.com/renderforest/images/v2/logo-homepage/flat_3.png"></img>
+    </header>
+  );
+};
+
+export default Header;
