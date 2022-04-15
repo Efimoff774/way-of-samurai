@@ -6,20 +6,55 @@ const Nav = () => {
   return (
     <nav className={classes.nav}>
       <div className={classes.item}>
-        {/* по итогу возвратит нам тег a с атрибутом href */}
-        <NavLink to="/Profile">Profile</NavLink>
+        {/* по итогу возвратит нам тег a с атрибутом href, основная задача - поменять без перезагрузки юрл*/}
+        <NavLink
+          to="/Profile"
+          className={({ isActive }) =>
+            isActive ? `${classes.activeLink}` : `${classes.item}`
+          }
+        >
+          Profile
+        </NavLink>
       </div>
       <div className={classes.item}>
-        <NavLink to="Dialogs">Messages</NavLink>
+        <NavLink
+          to="Dialogs"
+          className={({ isActive }) =>
+            isActive ? `${classes.activeLink}` : `${classes.item}`
+          }
+        >
+          Messages
+        </NavLink>
       </div>
       <div className={classes.item}>
-        <NavLink to="News">News</NavLink>
+        <NavLink
+          to="News"
+          className={({ isActive }) =>
+            isActive ? `${classes.activeLink}` : `${classes.item}`
+          }
+        >
+          News
+        </NavLink>
       </div>
       <div className={classes.item}>
-        <NavLink to="Music">Music</NavLink>
+        <NavLink
+          to="Music"
+          className={({ isActive }) =>
+            isActive ? `${classes.activeLink}` : `${classes.item}`
+          }
+        >
+          Music
+        </NavLink>
       </div>
       <div className={classes.item}>
-        <NavLink to="Settings">Settings</NavLink>
+        <NavLink
+          to="Settings"
+          className={({ isActive }) =>
+            isActive ? `${classes.activeLink}` : `${classes.item}`
+          }
+        >
+          Settings
+        </NavLink>
       </div>
     </nav>
   );
