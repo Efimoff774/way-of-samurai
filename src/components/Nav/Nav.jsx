@@ -8,7 +8,7 @@ const Nav = () => {
       <div className={classes.item}>
         {/* по итогу возвратит нам тег a с атрибутом href, основная задача - поменять без перезагрузки юрл*/}
         <NavLink
-          to="/Profile"
+          to="/profile"
           className={({ isActive }) =>
             isActive ? `${classes.activeLink}` : `${classes.item}`
           }
@@ -18,7 +18,7 @@ const Nav = () => {
       </div>
       <div className={classes.item}>
         <NavLink
-          to="Dialogs"
+          to="dialogs"
           className={({ isActive }) =>
             isActive ? `${classes.activeLink}` : `${classes.item}`
           }
@@ -28,7 +28,7 @@ const Nav = () => {
       </div>
       <div className={classes.item}>
         <NavLink
-          to="News"
+          to="news"
           className={({ isActive }) =>
             isActive ? `${classes.activeLink}` : `${classes.item}`
           }
@@ -38,7 +38,7 @@ const Nav = () => {
       </div>
       <div className={classes.item}>
         <NavLink
-          to="Music"
+          to="music"
           className={({ isActive }) =>
             isActive ? `${classes.activeLink}` : `${classes.item}`
           }
@@ -48,7 +48,7 @@ const Nav = () => {
       </div>
       <div className={classes.item}>
         <NavLink
-          to="Settings"
+          to="settings"
           className={({ isActive }) =>
             isActive ? `${classes.activeLink}` : `${classes.item}`
           }
