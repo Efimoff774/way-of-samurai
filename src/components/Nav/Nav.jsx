@@ -8,7 +8,7 @@ const Nav = () => {
       <div className={classes.item}>
         {/* по итогу возвратит нам тег a с атрибутом href, основная задача - поменять без перезагрузки юрл*/}
         <NavLink
-          to="/profile"
+          to="profile"
           className={({ isActive }) =>
             isActive ? `${classes.activeLink}` : `${classes.item}`
           }
